@@ -2,6 +2,8 @@
 
 A single-page website for learning and exploring Rubik’s Cube methods. Built with HTML + Tailwind CSS (via CDN) and a sprinkling of modern, custom CSS for visuals like glassmorphism, aurora orbs, and a pure CSS 3D cube.
 
+![alt text](asset/SS-hero.png)
+
 ## Features
 
 - Pure HTML + Tailwind CSS (no build step)
