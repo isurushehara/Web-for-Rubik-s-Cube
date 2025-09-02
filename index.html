@@ -12,7 +12,73 @@
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
-<body>
+<body class="antialiased text-gray-200">
+
+    <!-- Background Accents -->
+    <div class="orbs fixed inset-0 z-0"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-40">
+        <div class="accent-line"></div>
+        <div class="container mx-auto px-6">
+            <div class="mt-4 mb-3 glass rounded-2xl px-5 py-3 flex items-center justify-between">
+                <a href="#" class="flex items-center space-x-3">
+                    <!-- Logo: cube icon -->
+                    <span
+                        class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-gradient-to-br from-indigo-500 to-pink-500 shadow-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="text-white">
+                            <path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z" stroke="white" stroke-width="1.4"
+                                opacity=".9" />
+                            <path d="M12 20v-9M20 6.5l-8 4.5-8-4.5" stroke="white" stroke-width="1.2" opacity=".7" />
+                        </svg>
+                    </span>
+                    <span class="font-semibold tracking-wide">FewCube</span>
+                </a>
+
+                <!-- Mobile toggle -->
+                <input type="checkbox" id="nav-toggle">
+                <label for="nav-toggle"
+                    class="md:hidden cursor-pointer select-none p-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition">
+                    <svg width="24" height="24" viewBox="0 0 24 24" class="text-gray-100">
+                        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" />
+                    </svg>
+                </label>
+
+                <nav class="ml-4">
+                    <!-- Desktop menu -->
+                    <ul class="hidden md:flex items-center space-x-8 text-sm">
+                        <li><a href="#learn" class="hover:text-white text-gray-300 transition">Learn</a></li>
+                        <li><a href="#methods" class="hover:text-white text-gray-300 transition">Methods</a></li>
+                        <li><a href="#steps" class="hover:text-white text-gray-300 transition">Steps</a></li>
+                        <li><a href="#faq" class="hover:text-white text-gray-300 transition">FAQ</a></li>
+                        <li>
+                            <a href="#cta"
+                                class="ml-2 inline-flex items-center px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-500 to-pink-500 text-white font-medium shadow-lg transform hover:scale-[1.03] transition">
+                                Get the Guide
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Mobile menu (CSS-only) -->
+                    <ul class="mobile-menu md:hidden mt-3 space-y-2 text-sm">
+                        <li><a href="#learn"
+                                class="block px-3 py-2 rounded-lg hover:bg-white hover:bg-opacity-10">Learn</a></li>
+                        <li><a href="#methods"
+                                class="block px-3 py-2 rounded-lg hover:bg-white hover:bg-opacity-10">Methods</a></li>
+                        <li><a href="#steps"
+                                class="block px-3 py-2 rounded-lg hover:bg-white hover:bg-opacity-10">Steps</a></li>
+                        <li><a href="#faq" class="block px-3 py-2 rounded-lg hover:bg-white hover:bg-opacity-10">FAQ</a>
+                        </li>
+                        <li><a href="#cta"
+                                class="block px-3 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-pink-500 text-center font-medium">Get
+                                the Guide</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
 </body>
 
