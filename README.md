@@ -42,11 +42,12 @@ Recommended:
 ```
 .
 ├─ index.html        # The page (your file)
+├─ styles.css        # CSS styles file
 ├─ README.md
-└─ assets/           # (optional) images, downloads, favicon, etc.
+└─ favicon.png       # Icon (favicon)
 ```
 
-Currently, all custom CSS is embedded in a `<style>` tag within index.html for portability.
+Currently, all custom CSS is embedded in the `styles.css` file.
 
 ## Sections overview
 
@@ -81,14 +82,6 @@ Currently, all custom CSS is embedded in a `<style>` tag within index.html for p
 - Content
   - Edit the Learn, Methods, Steps, and FAQ copy to match your curriculum.
   - Link real downloads or pages to the “Get the Guide” and “Compare Methods” CTAs.
-- Year auto-update (optional)
-  - Add this before `</body>` to keep the footer year current:
-    ```html
-    <script>
-      const y = document.getElementById('year');
-      if (y) y.textContent = new Date().getFullYear();
-    </script>
-    ```
 
 ## Accessibility and UX notes
 
@@ -128,8 +121,6 @@ Currently, all custom CSS is embedded in a `<style>` tag within index.html for p
 ## Deployment
 
 - GitHub Pages: push, then enable Pages in repo settings
-- Netlify/Vercel: drag‑and‑drop or connect repo (framework = none/static)
-- Any static host: upload index.html (+ assets)
 
 ## Upgrading Tailwind (optional)
 
